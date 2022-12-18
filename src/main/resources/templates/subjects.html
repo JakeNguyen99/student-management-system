@@ -54,17 +54,15 @@
     <table class="table table-striped table-bordered">
         <thead class="table-dark">
         <tr>
-            <th> Subject First Name </th>
-            <th> Subject Last Name </th>
-            <th> Subject Email </th>
+            <th> Subject Name </th>
+            <th> Chapters </th>
             <th> Action </th>
         </tr>
         </thead>
         <tbody>
         <tr th:each = "subject: ${subjects}">
-            <td th:text = "${subject.firstName}"></td>
-            <td th:text = "${subject.lastName}"></td>
-            <th th:text = "${subject.email}"></th>
+            <td th:text = "${subject.SubName}"></td>
+            <td th:text = "${subject.Chapters}"></td>
             <th>
                 <a th:href = "@{/subjects/edit/{id}(id=${subject.id})}"
                    class="btn btn-primary"> Update </a>
