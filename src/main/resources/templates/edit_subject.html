@@ -48,35 +48,24 @@
             <div class = "card-body">
                 <form th:action="@{/subjects/{id}(id=${subject.id})}" th:object="${subject}" method="POST">
                     <div class="form-group">
-                        <label> Subject First Name</label>
+                        <label> Subject Name</label>
                         <input
                                 type="text"
-                                name="firstName"
-                                th:field="*{firstName}"
+                                name="SubName"
+                                th:field="*{SubName}"
                                 class="form-control"
-                                placeholder="Enter Subject First Name"
+                                placeholder="Enter Subject Name"
                         />
                     </div>
 
                     <div class="form-group">
-                        <label> Subject Last Name</label>
+                        <label> Chapters </label>
                         <input
                                 type="text"
-                                name="lastName"
-                                th:field="*{lastName}"
+                                name="Chapters"
+                                th:field="*{Chapters}"
                                 class="form-control"
-                                placeholder="Enter Subject Last Name"
-                        />
-                    </div>
-
-                    <div class="form-group">
-                        <label> Subject Email</label>
-                        <input
-                                type="text"
-                                name="email"
-                                th:field="*{email}"
-                                class="form-control"
-                                placeholder="Enter Subject Email"
+                                placeholder="Enter Chapters"
                         />
                     </div>
 
