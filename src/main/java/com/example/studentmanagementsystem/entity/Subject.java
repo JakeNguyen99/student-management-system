@@ -8,7 +8,7 @@ public class Subject {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long ID;
+    private Long Id;
 
     private String subName;
     private String chapters;
@@ -32,11 +32,11 @@ public class Subject {
         this.chapters = chapters;
     }
 
-    public Long getID() {
-        return ID;
+    public Long getId() {
+        return Id;
     }
 
-    public void setID(Long ID) {
-        this.ID = ID;
+    public void setId(Long Id) {
+        this.Id = Id;
     }
 }

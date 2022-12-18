@@ -40,7 +40,7 @@ public class TeacherController {
     @GetMapping("/teachers/edit/{id}")
     public String edit(@PathVariable Long id, Model model){
         model.addAttribute("teacher", teacherService.getTeacherById(id));
-        return "edit_student";
+        return "edit_teacher";
     }
 
     @PostMapping("/teachers/{id}")
