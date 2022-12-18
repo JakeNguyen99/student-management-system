@@ -2,7 +2,6 @@ package com.example.studentmanagementsystem.controller;
 
 import com.example.studentmanagementsystem.entity.Student;
 import com.example.studentmanagementsystem.service.StudentService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
