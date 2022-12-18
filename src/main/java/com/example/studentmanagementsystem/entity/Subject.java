@@ -1,11 +1,6 @@
 package com.example.studentmanagementsystem.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "subject")
@@ -15,26 +10,26 @@ public class Subject {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long ID;
 
-    private String SubName;
-    private String Chapters;
+    private String subName;
+    private String chapters;
 
     public Subject() {
     }
 
     public String getSubName() {
-        return SubName;
+        return subName;
     }
 
     public void setSubName(String subName) {
-        SubName = subName;
+        this.subName = subName;
     }
 
     public String getChapters() {
-        return Chapters;
+        return chapters;
     }
 
     public void setChapters(String chapters) {
-        Chapters = chapters;
+        this.chapters = chapters;
     }
 
     public Long getID() {

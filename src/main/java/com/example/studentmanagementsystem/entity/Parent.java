@@ -10,15 +10,15 @@ public class Parent {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String MotherName;
-    private String FartherName;
-    private String Address;
+    private String motherName;
+    private String fatherName;
+    private String address;
 
 
-    public Parent(String motherName, String fartherName, String address) {
-        MotherName = motherName;
-        FartherName = fartherName;
-        Address = address;
+    public Parent(String fatherName, String motherName, String address) {
+        this.motherName = motherName;
+        this.fatherName = fatherName;
+        this.address = address;
     }
 
     public Parent() {
@@ -33,26 +33,26 @@ public class Parent {
     }
 
     public String getMotherName() {
-        return MotherName;
+        return motherName;
     }
 
     public void setMotherName(String motherName) {
-        MotherName = motherName;
+        this.motherName = motherName;
     }
 
-    public String getFartherName() {
-        return FartherName;
+    public String getFatherName() {
+        return fatherName;
     }
 
-    public void setFartherName(String fartherName) {
-        FartherName = fartherName;
+    public void setFatherName(String fatherName) {
+        this.fatherName = fatherName;
     }
 
     public String getAddress() {
-        return Address;
+        return address;
     }
 
     public void setAddress(String address) {
-        Address = address;
+        this.address = address;
     }
 }

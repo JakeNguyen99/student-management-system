@@ -46,7 +46,7 @@ public class ParentController {
     @PostMapping("/parents/{id}")
     public String update(@PathVariable Long id, @ModelAttribute("parent") Parent parent){
         Parent existingParent = parentService.getParentById(id);
-        existingParent.setFartherName(parent.getFartherName());
+        existingParent.setFatherName(parent.getFatherName());
         existingParent.setMotherName(parent.getMotherName());
         existingParent.setAddress(parent.getAddress());
         parentService.update(existingParent);
